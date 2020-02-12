@@ -1,0 +1,55 @@
+﻿input[type=text], [type=password], [type=email]{
+  border: 1px solid green;
+  border-radius: 4px;
+  padding: 4px 8px;
+  margin: 1%;
+  outline: none;
+}
+
+input[type=text]:focus,[type=password]:focus, [type=email]:focus {
+  border: 2px solid #05521C;
+}
+
+button{
+  background-color: #e7e7e7;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 12px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  margin: 1%;
+}
+
+button:hover {
+  background-color: #000000;
+  color: white;
+}
+
+body {
+	background-color: #FFFFEB;	
+	margin-top: 2%;
+	margin-left: 4%;
+}	
+
+label {	
+	font-weight: bolder;
+}
+
+span {	
+	margin-right: 1%;
+}
+
+select {
+	margin: 1%;
+	padding-top: 0.5%;	
+	padding-right: 1%;
+	padding-left: 1%;
+	padding-bottom: 0.5%;	
+  outline: none;
+}
+
+select:focus {
+  border: 2px solid #05521C;	
+}

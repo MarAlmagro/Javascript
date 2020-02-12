@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario</title>
+	<link rel="stylesheet" href="estilos.css" />
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+
+	<form id="form0" name="formulario" onsubmit="return validarFormulario();"> 
+		<label for="usuario">Usuario :</label><input type="text" name="usuario" /><br />
+		<label for="passwd01">Password :</label><input type="password" name="passwd01" />
+		<input type="checkbox" name="verPassword01" onclick="mostrarPassword(event)"><span>Mostrar</span><br>
+		<label for="passwd02">Confirma Password :</label><input type="password" name="passwd02" />
+		<input type="checkbox" name="verPassword02" onclick="mostrarPassword(event)"><span>Mostrar</span><br>
+		<label for="email">Email :</label><input type="email" name="email" /><br />
+		<label for="dni">DNI :</label><input type="text" name="dni" /><br />
+		<label for="aficiones">Tus aficiones : <br />
+		</label><select name="aficiones" size="2" multiple>
+														  <option value="programar">Programar</option>
+														  <option value="leer">Leer</option>
+														  <option value="cantar">Cantar</option>
+														  <option value="bailar">Bailar</option>
+													  </select><br />
+		
+		<label for="newaficion">Nueva afici&oacute;n : </label><input  type="text" name="newaficion" />
+		<button name="addAficion" type="button">A&ntilde;adir Afici&oacute;n</button><br />
+
+		<input type="checkbox" name="aceptar" /><span>Acepto las Condiciones</span>
+		<button name="registrar" type="submit">Reg&iacute;strate</button><br />
+		
+		<button name="guardar" type="button">Guardar Datos</button>
+		<button name="recuperar" type="button">Recuperar Datos</button>
+		<button name="limpiar" type="reset" >Limpiar</button>
+	</form>
+
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DAW_M06_4</title>
+	<style>
+		button{font-weight:bolder; margin-left:1%; padding:0.5%;}
+		#nuevaComp {background-color:Cyan; }
+		#finalizar {background-color:Aquamarine; }
+		body{margin:2%;}
+		fieldset{padding-left:4%;}
+	</style>
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <fieldset>
+        <legend>Competición</legend><br/>
+        <p>
+			<!-- Nombre del participante -->
+            Nombre :  <input type=text id="nombre" placeholder="Nombre"/>  
+			<!-- Lista que permite seleccionar un color -->
+            Color :   <select id="colores">
+                        <option value="Blue" selected>Azul</option>
+                        <option value="DarkOrange">Naranja</option>
+                        <option value="Brown">Marrón</option>
+                        <option value="Dark">Negro</option>
+                        <option value="DeepPink">Rosa</option>
+                        <option value="Red">Rojo</option>
+                        <option value="DarkGreen">Verde</option>
+                        <option value="Purple">Violeta</option>
+                    </select>  
+                    <button id="agregar" onclick="addParticipante();"> AÑADE PARTICIPANTE </button>
+        </p><br/>
+        <p>
+		<!-- Botones para finalizar y reabrir la competición -->
+        <button id="finalizar" onclick="finalizar();"> FINALIZA COMPETICIÓN </button>
+		<button id="nuevaComp" onclick="nuevaComp();"> NUEVA COMPETICIÓN </button>
+        </p> <br/>     
+        <p>
+             Posición : <input id="pos" placeholder="Posición (1-100)"/> <button id="borrar" onclick="borrar();"> BORRA PARTICIPANTE </button>
+        </p><br/> 
+        <p>
+            Posición Final : <input id="posFinal" placeholder="Posición Final (1-100)"/> <button id="mover" onclick="mover();"> MUEVE PARTICIPANTE </button>
+        </p><br/> 
+        <p>
+		<!-- Botón que modifica el nombre del participante cuya posición de la lista 
+		     participantes es la indicada en el input "pos" -->
+        <button id="modificar" onclick="modificar();"> MODIFICA PARTICIPANTE </button>
+        </p><br/> 
+    </fieldset>
+    <br /><h2>Participantes</h2>
+	<!-- Lista ordenada participantes de la competición -->
+    <ol id="lista"></ol>
+    <!-- Muestra avisos al usuario -->
+    <p id="avisos" style="color:maroon;font-weight:bolder"></p>
+       
+</body>
+</html>

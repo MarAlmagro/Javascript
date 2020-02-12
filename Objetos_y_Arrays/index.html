@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DAW_M06_3</title>
+    <script src="index.js"></script>
+</head>
+<body>
+    <h1>Hornear Pizzas</h1>
+    <p>
+    <br \>
+    <!-- Botón que al clicarlo muestra la información de todas 
+         las pizzas en el div "datosPizzas" -->
+    <button onclick="mostrarPizzas();">MOSTRAR PIZZAS</button>
+    </p>
+    <div id="datosPizzas"></div>
+    
+    <p>
+        <br \>
+        <!-- Botón que al pulsarlo cada segundo llama a la función 
+            hornear de cada pizza y posteriormente actualiza por 
+            pantalla los valores de las pizzas -->
+        <button onclick="empiezaHornear();">EMPIEZA HORNEAR</button>
+    </p>
+
+    <div id="estadoPizzas"></div>
+
+    <div id="mensajeTerminadas"></div>
+
+</body>
+</html>

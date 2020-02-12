@@ -1,0 +1,80 @@
+﻿.grid {
+  display: grid;
+  grid-row-gap: 4%;
+  grid-column-gap: 5%;
+  justify-content: center;
+}
+
+#nuevaPartida{
+  background-color: #FFBF00;
+  color: #000000;
+}
+
+button{
+  background-color: rgb(4, 118, 156);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 6px 8px;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+button:hover, #nuevaPartida:hover {
+  background-color: #000000;
+  color: white;
+}
+
+body {
+  width: 20%;
+  justify-content: center;
+}	
+
+div{
+  text-align: center;
+}
+
+pre {	
+  font-weight: bold;
+  color: rgb(136, 8, 8);
+  font-size: 20px;
+}
+
+#mensajes{	
+  font-weight: bold;
+  font-size: 18px;
+}
+
+h2 {
+  color: rgb(4, 118, 156);
+}
+
+#letras {
+  display: grid;
+  grid-template-columns: repeat(9, 35px);
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 5%;
+  column-gap: 1%;
+}
+
+#imagen {
+  width: 30%;
+  height: 40%;
+  margin: 5%;
+  border: 4px solid rgb(4, 118, 156);	
+}
+
+span{  
+  font-style: italic;
+  color: rgb(136, 8, 8);
+}
